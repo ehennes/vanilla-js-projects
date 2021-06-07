@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Video Player</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/b0f66697ae.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1>Custom Video Player</h1>
+  <video src="videos/181015_13_Venice Beach Drone_25.mp4" id="video" class="screen">
+  </video>
+  <div class="controls">
+    <button class="btn" id="play">
+      <i class="fa fa-play fa-2x"></i>
+    </button>
+    <button class="btn" id="stop">
+      <i class="fa fa-stop fa-2x"></i>
+    </button>
+    <input type="range" id="progress" class="progress" min="0" max="100" step="0.1" value="0" />
+    <span class="timestamp" id="timestamp">00:00</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
